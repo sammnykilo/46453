@@ -5,10 +5,12 @@
 version: 2
 jobs:
   build:
+    parallelism: 15
     docker:
       # specify the version you desire here
       - image: circleci/node:6.11.0
       - image: selenium/standalone-chrome:3.11.0
+    resource_class: large
       
       # Specify service dependencies here if necessary  
       # CircleCI maintains a library of pre-built images
