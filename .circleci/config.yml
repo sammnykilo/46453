@@ -35,6 +35,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
           
       - run:
+          name: privasi
+          command: chmod u+x build.sh
+          
+      - run:
           name: create docker network
           command: docker network create grid
      
@@ -54,6 +58,63 @@ jobs:
       - run: 
           name: run tests
           command: node index.js
+  build1:
+    parallelism: 15
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:6.11.0
+      - image: selenium/standalone-chrome:3.11.0
+    resource_class: large
+      
+      # Specify service dependencies here if necessary  
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/repo
+            
+    steps:
+      - checkout    
+      - setup_remote_docker
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
           
+      - run:
+          name: privasi
+          command: chmod u+x build.sh
+          
+      - run:
+          name: create docker network
+          command: docker network create grid
+     
+      - run:
+          name: install selenium-hub
+          command: docker run -d --rm -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.11.0
+          
+      - run:
+          name: install selenium-node
+          command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
+      
+      - run:
+          name: install-npm
+          command: npm install
+        
+      # run tests!
+      - run: 
+          name: run tests
+          command: node index.js
 
-
+workflows:
+  master:
+    jobs:
+      - build
+      - build1
