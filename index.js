@@ -1,30 +1,22 @@
-#!/usr/bin/env node
+        var bash_exit_code = 0;          // global to provide exit code from bash shell invocation
 
-'use strict';
+        function bash(command)
+        {
+          var c;           // a character of the shell's stdout stream
+          var retval = "";          // the return value is the stdout of the shell
 
-var fs = require('fs-plus');
-var path = require('path');
-var program = require('commander');
-var pjson = require('./package.json');
-var cucumber = require('cucumber');
+          var rt = Runtime.getRuntime();        // get current runTime object
+          var shell = rt.exec("bash -c '" + command + "'");   // start the shell
+          var shellIn = shell.getInputStream();        // this captures the output from the command
 
-function collectPaths(value, paths) {
-    paths.push(value);
-    return paths;
-}
+          while ((c = shellIn.read()) != -1)        // loop to capture shell's stdout
+            {
+              retval += String.fromCharCode(c);        // one character at a time
+            }
 
-// add strict option (fail if there are any undefined or pending steps)
-process.argv.push('-S');
+          bash_exit_code = shell.waitFor();        // wait for the shell to finish and get the return code
 
-//
-// execute cucumber
-//
-var cucumberCli = cucumber.Cli(process.argv);
+          shellIn.close();          // close the shell's output stream
 
-global.cucumber = cucumber;
-
-cucumberCli.run(function (succeeded) {
-
-    var code = succeeded ? 0 : 1;
-
-    function exitNow() {
+          return retval;
+        }
