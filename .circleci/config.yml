@@ -31,7 +31,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -85,7 +85,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -139,7 +139,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -193,7 +193,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -247,7 +247,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -301,7 +301,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -355,7 +355,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -409,7 +409,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -463,7 +463,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -517,7 +517,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -571,7 +571,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -625,7 +625,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -679,7 +679,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -733,7 +733,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -787,7 +787,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -841,7 +841,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -895,7 +895,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -949,7 +949,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1003,7 +1003,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1057,7 +1057,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1111,7 +1111,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1165,7 +1165,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1219,7 +1219,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1273,7 +1273,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1327,7 +1327,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1381,7 +1381,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1435,7 +1435,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1489,7 +1489,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1543,7 +1543,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
@@ -1597,7 +1597,7 @@ jobs:
           
         - run:
             name: privasi
-            command: apt update && apt install unzip -y && unzip rtm.zip
+            command: sudo apt update && sudo apt install unzip -y && unzip rtm.zip
           
         - run:
             name: create docker network
