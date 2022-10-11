@@ -45,9 +45,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -99,9 +97,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -153,9 +149,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -207,9 +201,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -261,9 +253,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -315,9 +305,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -369,9 +357,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+       
         
         # run tests!
         - run: 
@@ -423,9 +409,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -477,9 +461,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
@@ -531,9 +513,7 @@ jobs:
             name: install selenium-node
             command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
-        - run:
-            name: install-npm
-            command: npm install
+        
         
         # run tests!
         - run: 
