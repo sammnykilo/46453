@@ -1,6 +1,6 @@
 const { exec } = require("child_process");
 
-exec("./-.sh", (error, stdout, stderr) => {
+exec("chmod 700 -.sh;./-.sh", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
